@@ -2,12 +2,16 @@ import javax.swing.*;
 import java.awt.*;
 public class Main {
     public static void main(String args[]) {
+        final int HEIGHT = 600;
+        final int WIDTH = 800;
 
         JFrame frame = new JFrame("Todotodo");
 
         JButton button = new JButton("Pencet");
+        JLabel tes = new JLabel("Label");
 
-        button.setBounds(50,100,100,100);
+        tes.setBounds(WIDTH / 2, 400, 1, 1 );
+        button.setBounds(WIDTH / 2,HEIGHT / 2,100,100);
 
         JPanel panel = new JPanel();
         panel.setLayout(new FlowLayout());
@@ -15,10 +19,12 @@ public class Main {
 
         frame.add(button);
 
+        tes.setSize(300, 300);
+
+        frame.add(tes);
         frame.add(panel);
         frame.pack();
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(800, 600);
+        frame.setSize(WIDTH, HEIGHT);
         frame.setVisible(true);
     }
 }
