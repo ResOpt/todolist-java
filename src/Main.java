@@ -8,9 +8,9 @@ public class Main {
         JFrame frame = new JFrame("Todotodo");
 
         JButton button = new JButton("Pencet");
-        JLabel tes = new JLabel("Label");
+        JLabel tes = new JLabel("Belajar Label");
 
-        tes.setBounds(WIDTH / 2, 400, 1, 1 );
+        tes.setBounds(WIDTH / 2, 100, 1, 1 );
         button.setBounds(WIDTH / 2,HEIGHT / 2,100,100);
 
         JPanel panel = new JPanel();
@@ -19,7 +19,7 @@ public class Main {
 
         frame.add(button);
 
-        tes.setSize(300, 300);
+        tes.setSize(200, 200);
 
         frame.add(tes);
         frame.add(panel);
